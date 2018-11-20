@@ -1,0 +1,35 @@
+.container{
+    margin: 40px;
+
+}
+span{
+
+
+}
+#stop-button{
+
+
+}
+p{
+
+    padding:8% 0% 2% 2%;
+}
+input{
+    position:relative;
+    top: 40px;
+    display: inline;
+}
+h1{
+    text-align: center;
+    background-color: #b3d7ff;
+    text-decoration: underline;
+}
+button{
+    position:relative;
+    left: 400px;
+    top:30px;
+}
+body{
+    background-image: url("https://www.maier.fr/28696-product_large/horloge-max-bill-quartz.jpg");
+    background-size: 50%;
+}

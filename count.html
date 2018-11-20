@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="count.css">
+    <link rel="stylesheet" href="bootstrap.css">
+
+</head>
+<body>
+<div class ="chrono"></div>
+<div class="stop"></div>
+<h1>CountDown</h1>
+
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-sm-4"></div>
+    <div class="col-sm-8"><input type="number"id ='tim' placeholder="temp en seconds">
+     <input type="number" id="minut" placeholder="temp en minute"></div>
+
+</div>
+</div>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-sm-4"><button id="but" type="button">valider</button>
+   <button id="stop-button" type="button">Stop</button><button id="button" type="button">play</button>
+    <button id="bout" type="button">reset</button></div>
+        <div class="col-sm-4" id ="ereur"></div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+    <p>
+    <span id="heur">0</span> heur
+    <span id="minute">0</span> minute
+    <span id="seconds">0</span> seconds
+
+
+</p>
+    </div>
+    </div>
+</div>
+<script src="count.js"></script>
+</body>
+</html>
