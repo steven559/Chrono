@@ -78,7 +78,7 @@ var countUp = function () {
         heure.innerHTML = heur;
         enminute.innerHTML = minutes;
     }
-    if (reste <= -1 && minutes <= 0) {
+    if (reste <= 0 && minutes <= 0) {
         clearTimeout(stop);
     }
     if(heur==0){
@@ -88,11 +88,15 @@ var countUp = function () {
         heure.style.visibility="visible";
     }
 
-    if(minutes>0 && minutes<=9){
+    if(minutes>=0 && minutes<10){
         enminute.innerHTML ="0"+ minutes+" "+":";
     }
-    if(reste>0 && reste<=9){
+    if(reste>=0 && reste<10){
         seconds.innerHTML ="0"+ reste+" "+":";
+    }
+
+    else{
+        seconds.innerHTML =reste+" "+":";
     }
 
     document.getElementById("button").style.visibility = "hidden";
