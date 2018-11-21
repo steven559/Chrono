@@ -57,10 +57,10 @@ var countUp = function () {
     stop = setTimeout(countUp, 1000);
     stop;
 
-    enminute.innerHTML = minutes;
+    enminute.innerHTML = minutes+" "+":";
 
-    seconds.innerHTML = reste--;
-
+    seconds.innerHTML = reste--+" "+":";
+    heure.innerHTML = heur+" "+":";
 
     console.log(minutes);
     if (reste <= 0 && minutes > 0) {
@@ -81,7 +81,19 @@ var countUp = function () {
     if (reste <= -1 && minutes <= 0) {
         clearTimeout(stop);
     }
+    if(heur==0){
+        heure.style.visibility="hidden";
+    }
+    else{
+        heure.style.visibility="visible";
+    }
 
+    if(minutes>0 && minutes<=9){
+        enminute.innerHTML ="0"+ minutes+" "+":";
+    }
+    if(reste>0 && reste<=9){
+        seconds.innerHTML ="0"+ reste+" "+":";
+    }
 
     document.getElementById("button").style.visibility = "hidden";
 

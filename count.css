@@ -3,6 +3,13 @@
 
 }
 span{
+    font-size: 200%;
+    color:red;
+    font-family: cursive;
+display: inline;
+    margin-left: 50px;
+    text-align: left;
+
 
 
 }
@@ -11,8 +18,11 @@ span{
 
 }
 p{
+    background-color: black;
 
-    padding:8% 0% 2% 2%;
+border:solid 1px;
+    border-radius: 40px;
+
 }
 input{
     position:relative;
@@ -21,8 +31,21 @@ input{
 }
 h1{
     text-align: center;
-    background-color: #b3d7ff;
+    position: relative;
+
+    display:block;
+
+
     text-decoration: underline;
+}
+header{
+
+   background-image: url("https://previews.123rf.com/images/melpomen/melpomen1407/melpomen140700020/30105761-teal-couleur-abstraite-lumi%C3%A8re-brillante-fond-d%C3%A9grad%C3%A9.jpg");
+border:solid 2px;
+    border-radius:30px;
+    display: inline-block;
+    width:450px;
+    margin-left:325px;
 }
 button{
     position:relative;
@@ -30,6 +53,10 @@ button{
     top:30px;
 }
 body{
-    background-image: url("https://www.maier.fr/28696-product_large/horloge-max-bill-quartz.jpg");
-    background-size: 50%;
+    background-image: url("https://www.desktopbackground.org/p/2012/02/11/342191_more-chrono-trigger-wallpapers_1600x1200_h.jpg");
+    background-size: cover;
+}
+#tim ,#minut{
+    margin-left: 50px;
+
 }
